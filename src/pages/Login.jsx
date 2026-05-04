@@ -40,13 +40,13 @@ function Login() {
             localStorage.setItem("nomeUsuario", resultado.user.name)
             localStorage.setItem("emailUsuario", resultado.user.email)
 
-            alert("LOGADO COM SUCESSO")
+            alert("Login realizado com sucesso")
 
             navigate('/')
 
 
         } catch (error) {
-            alert("EROO: SAI DAQUI, VC NÃO TEM ACESSO")
+            alert("Caracteres inválidos ou usuário não encontrado")
         }
     }
 
